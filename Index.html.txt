@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kéfir Artesanal | Salud y Bienestar Natural</title>
+    <!-- Tailwind CSS desde CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Font Inter & Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        kefir: {
+                            50: '#f4f9f4',
+                            100: '#e3f2e3',
+                            200: '#c6e5c7',
+                            500: '#38a169',
+                            600: '#2f855a',
+                            700: '#276749',
+                            800: '#22543d',
+                            cream: '#faf8f5',
+                            gold: '#d4af37'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        heading: ['Outfit', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+        }
+        .hero-bg {
+            background: radial-gradient(circle at top right, rgba(227, 242, 227, 0.7) 0%, rgba(250, 248, 245, 1) 70%);
+        }
+    </style>
+</head>
+<body class="bg-kefir-cream text-gray-800 font-sans antialiased selection:bg-kefir-500 selection:text-white">
+
+    <!-- Navegación Superior -->
+    <nav class="sticky top-0 z-50 glass-card border-b border-kefir-100 shadow-sm">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-full bg-kefir-500 flex items-center justify-center text-white shadow-md">
+                        <i class="fa-solid fa-bottle-droplet text-xl"></i>
+                    </div>
+                    <div>
+                        <span class="font-heading font-bold text-2xl text-kefir-800 tracking-tight">Kéfir<span class="text-kefir-500">Vital</span></span>
+                        <span class="block text-xs text-kefir-600 font-medium tracking-wide uppercase">100% Artesanal</span>
+                    </div>
+                </div>
+                
+                <div class="hidden md:flex items-center gap-8 font-medium text-gray-600">
+                    <a href="#beneficios" class="hover:text-kefir-600 transition-colors">Beneficios</a>
+                    <a href="#productos" class="hover:text-kefir-600 transition-colors">Precios</a>
+                    <a href="#testimonios" class="hover:text-kefir-600 transition-colors">Testimonios</a>
+                    <a href="#faq" class="hover:text-kefir-600 transition-colors">Preguntas</a>
+                </div>
+
+                <div>
+                    <a href="https://api.whatsapp.com/send?phone=584123350535&text=Hola!%20Me%20gustar%C3%ADa%20obtener%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20K%C3%A9fir." 
+                       target="_blank" 
+                       class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold px-5 py-2.5 rounded-full transition-all shadow-lg shadow-emerald-600/20 hover:scale-105">
+                        <i class="fa-brands fa-whatsapp text-lg"></i>
+                        <span>Contactar</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-bg py-16 lg:py-24 overflow-hidden relative border-b border-kefir-100">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-kefir-100 text-kefir-700 text-xs sm:text-sm font-semibold mb-6">
+                        <i class="fa-solid fa-sparkles text-kefir-500"></i> Probiótico 100% Natural y Fresco
+                    </div>
+                    <h1 class="font-heading text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight mb-6">
+                        Regenera tu salud desde el <span class="text-kefir-600 underline decoration-kefir-200 decoration-wavy">interior</span>
+                    </h1>
+                    <p class="text-lg text-gray-650 mb-8 leading-relaxed">
+                        Descubre el poder del Kéfir artesanal. Una bebida fermentada repleta de bacterias beneficiosas y levaduras vivas que transforman tu digestión y elevan tu sistema inmune.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <a href="#productos" class="bg-kefir-600 hover:bg-kefir-700 text-white font-bold px-8 py-4 rounded-xl shadow-lg shadow-kefir-600/30 transition-all hover:-translate-y-0.5 text-center">
+                            Ver Presentaciones y Precios
+                        </a>
+                        <a href="#beneficios" class="bg-white hover:bg-gray-50 text-kefir-800 font-bold px-8 py-4 rounded-xl border border-kefir-200 transition-all text-center">
+                            ¿Por qué consumirlo?
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Ilustración / Imagen representativa -->
+                <div class="relative flex justify-center">
+                    <div class="w-72 h-72 sm:w-96 sm:h-96 bg-gradient-to-tr from-kefir-200 to-kefir-50 rounded-full absolute -z-10 blur-2xl opacity-70"></div>
+                    <div class="bg-white p-6 sm:p-8 rounded-3xl shadow-xl border border-kefir-100 max-w-sm w-full text-center relative">
+                        <div class="w-32 h-32 mx-auto bg-kefir-50 rounded-full flex items-center justify-center mb-6 border-4 border-kefir-100">
+                            <i class="fa-solid fa-glass-water-droplet text-6xl text-kefir-500"></i>
+                        </div>
+                        <h3 class="font-heading font-bold text-xl text-gray-800">Fermentación Natural</h3>
+                        <p class="text-sm text-gray-500 mt-2">Elaborado diariamente de forma tradicional para garantizar la máxima biodisponibilidad y frescura.</p>
+                        <div class="mt-6 pt-6 border-t border-gray-100 flex justify-around text-center">
+                            <div>
+                                <span class="block font-bold text-kefir-700 text-xl">+30</span>
+                                <span class="text-xs text-gray-400 font-medium">Cepas de Probióticos</span>
+                            </div>
+                            <div class="border-r border-gray-100"></div>
+                            <div>
+                                <span class="block font-bold text-kefir-700 text-xl">100%</span>
+                                <span class="text-xs text-gray-400 font-medium">Sin Conservantes</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sección de Beneficios -->
+    <section id="beneficios" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-xs uppercase tracking-widest text-kefir-600 font-bold mb-2">Salud Digestiva e Inmunológica</h2>
+                <p class="font-heading text-3xl sm:text-4xl font-bold text-gray-900">Beneficios de tomar Kéfir a diario</p>
+                <div class="w-16 h-1 bg-kefir-500 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Beneficio 1 -->
+                <div class="p-6 rounded-2xl bg-kefir-cream border border-kefir-100 hover:shadow-lg transition-all">
+                    <div class="w-14 h-14 bg-kefir-100 rounded-xl flex items-center justify-center text-kefir-600 mb-6 text-2xl">
+                        <i class="fa-solid fa-bacteria"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-xl text-gray-900 mb-3">Flora Intestinal</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Aporta miles de millones de microorganismos vivos que equilibran y regeneran tu microbiota dañada.
+                    </p>
+                </div>
+
+                <!-- Beneficio 2 -->
+                <div class="p-6 rounded-2xl bg-kefir-cream border border-kefir-100 hover:shadow-lg transition-all">
+                    <div class="w-14 h-14 bg-kefir-100 rounded-xl flex items-center justify-center text-kefir-600 mb-6 text-2xl">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-xl text-gray-900 mb-3">Sistema Inmune</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Más del 70% de tus defensas están en el intestino. El kéfir fortalece tus barreras naturales.
+                    </p>
+                </div>
+
+                <!-- Beneficio 3 -->
+                <div class="p-6 rounded-2xl bg-kefir-cream border border-kefir-100 hover:shadow-lg transition-all">
+                    <div class="w-14 h-14 bg-kefir-100 rounded-xl flex items-center justify-center text-kefir-600 mb-6 text-2xl">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-xl text-gray-900 mb-3">Mejor Digestión</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Reduce sustancialmente la lactosa facilitando la digestión y optimizando la absorción de nutrientes.
+                    </p>
+                </div>
+
+                <!-- Beneficio 4 -->
+                <div class="p-6 rounded-2xl bg-kefir-cream border border-kefir-100 hover:shadow-lg transition-all">
+                    <div class="w-14 h-14 bg-kefir-100 rounded-xl flex items-center justify-center text-kefir-600 mb-6 text-2xl">
+                        <i class="fa-solid fa-heart-pulse"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-xl text-gray-900 mb-3">Antiinflamatorio</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Reduce la inflamación abdominal, previene la acidez y te brinda energía renovada todos los días.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Productos y Precios -->
+    <section id="productos" class="py-20 bg-kefir-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-xs uppercase tracking-widest text-kefir-600 font-bold mb-2">Nuestras Presentaciones</h2>
+                <p class="font-heading text-3xl sm:text-4xl font-bold text-gray-900">Elige la medida ideal para ti</p>
+                <p class="text-gray-600 mt-2">Envases garantizados para mantener la frescura y propiedades intactas.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <!-- Tarjeta 500 ml -->
+                <div class="bg-white rounded-3xl p-8 shadow-xl border border-kefir-100 flex flex-col justify-between relative overflow-hidden group hover:border-kefir-500 transition-all">
+                    <div>
+                        <div class="flex justify-between items-start mb-6">
+                            <div>
+                                <span class="text-sm font-semibold text-kefir-600 bg-kefir-100 px-3 py-1 rounded-full">Personal</span>
+                                <h3 class="font-heading text-2xl font-bold text-gray-900 mt-2">Presentación 500 ml</h3>
+                            </div>
+                            <div class="text-right">
+                                <span class="text-4xl font-extrabold text-gray-900">$6</span>
+                                <span class="text-xs text-gray-400 block">USD</span>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 text-sm mb-6">
+                            Ideal para comenzar a probar los beneficios del kéfir o para consumo individual durante la semana.
+                        </p>
+                        <ul class="space-y-3 mb-8 text-sm text-gray-600">
+                            <li class="flex items-center gap-2">
+                                <i class="fa-solid fa-check text-kefir-500"></i> Rinde aprox 3 a 4 porciones
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i class="fa-solid fa-check text-kefir-500"></i> Botella hermética de vidrio
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i class="fa-solid fa-check text-kefir-500"></i> Fermentación natural garantizada
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="https://api.whatsapp.com/send?phone=584123350535&text=Hola!%20Quiero%20pedir%20la%20presentaci%C3%B3n%20de%20500ml%20por%206$" 
+                       target="_blank" 
+                       class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-4 rounded-xl shadow-lg shadow-emerald-600/20 text-center flex items-center justify-center gap-2 transition-all">
+                        <i class="fa-brands fa-whatsapp text-xl"></i>
+                        <span>Pedir 500ml ($6)</span>
+                    </a>
+                </div>
+
+                <!-- Tarjeta 1 Litro (Destacada) -->
+                <div class="bg-white rounded-3xl p-8 shadow-xl border-2 border-kefir-500 flex flex-col justify-between relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 bg-kefir-500 text-white text-xs font-bold uppercase tracking-wider px-4 py-1.5 rounded-bl-xl shadow-sm">
+                        Mejor Valor
+                    </div>
+                    <div>
+                        <div class="flex justify-between items-start mb-6">
+                            <div>
+                                <span class="text-sm font-semibold text-kefir-700 bg-kefir-100 px-3 py-1 rounded-full">Familiar / Ahorro</span>
+                                <h3 class="font-heading text-2xl font-bold text-gray-900 mt-2">Presentación 1 Litro</h3>
+                            </div>
+                            <div class="text-right">
+                                <span class="text-4xl font-extrabold text-gray-900">$10</span>
+                                <span class="text-xs text-gray-400 block">USD</span>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 text-sm mb-6">
+                            La opción favorita para consumo diario en el hogar. Máximo ahorro y salud para toda la familia.
+                        </p>
+                        <ul class="space-y-3 mb-8 text-sm text-gray-600">
+                            <li class="flex items-center gap-2">
+                                <i class="fa-solid fa-check text-kefir-500"></i> Rinde aprox 7 a 8 porciones
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i class="fa-solid fa-check text-kefir-500"></i> Botella hermética conservadora
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i class="fa-solid fa-check text-kefir-500"></i> Mayor ahorro por mililitro
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="https://api.whatsapp.com/send?phone=584123350535&text=Hola!%20Quiero%20pedir%20la%20presentaci%C3%B3n%20de%201%20Litro%20por%2010$" 
+                       target="_blank" 
+                       class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-4 rounded-xl shadow-lg shadow-emerald-600/30 text-center flex items-center justify-center gap-2 transition-all">
+                        <i class="fa-brands fa-whatsapp text-xl"></i>
+                        <span>Pedir 1 Litro ($10)</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonios Breves -->
+    <section id="testimonios" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-xs uppercase tracking-widest text-kefir-600 font-bold mb-2">Opiniones Real de Clientes</h2>
+                <p class="font-heading text-3xl font-bold text-gray-900">Lo que dicen quienes lo consumen</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="p-6 rounded-2xl bg-kefir-cream border border-kefir-100">
+                    <div class="flex text-amber-400 mb-3 text-sm">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 text-sm mb-4">"Tenía problemas digestivos contantes. A la semana de tomar el kéfir la inflamación desapareció por completo."</p>
+                    <span class="font-bold text-sm text-gray-800">— Mariana G.</span>
+                </div>
+
+                <div class="p-6 rounded-2xl bg-kefir-cream border border-kefir-100">
+                    <div class="flex text-amber-400 mb-3 text-sm">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 text-sm mb-4">"Excelente calidad. La atención por WhatsApp fue rapidísima y el producto llegó muy fresco a mi casa."</p>
+                    <span class="font-bold text-sm text-gray-800">— Carlos R.</span>
+                </div>
+
+                <div class="p-6 rounded-2xl bg-kefir-cream border border-kefir-100">
+                    <div class="flex text-amber-400 mb-3 text-sm">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 text-sm mb-4">"Pido siempre la botella de 1 Litro para toda la familia. Lo mezclamos en los batidos del desayuno y sabe increíble."</p>
+                    <span class="font-bold text-sm text-gray-800">— Elena M.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Preguntas Frecuentes (FAQ) -->
+    <section id="faq" class="py-20 bg-kefir-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-heading text-3xl font-bold text-gray-900">Preguntas Frecuentes</h2>
+            </div>
+
+            <div class="space-y-4">
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-kefir-100">
+                    <h3 class="font-bold text-lg text-gray-800 mb-2">¿Cómo se consume el Kéfir?</h3>
+                    <p class="text-gray-600 text-sm">Puedes tomarlo solo en ayunas (idealmente 150ml a 200ml al día), o mezclarlo con frutas, avena o en batidos.</p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-kefir-100">
+                    <h3 class="font-bold text-lg text-gray-800 mb-2">¿Cuánto dura refrigerado?</h3>
+                    <p class="text-gray-600 text-sm">Al ser un producto vivo y natural, se conserva en perfecto estado en la nevera entre 2 y 3 semanas.</p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-kefir-100">
+                    <h3 class="font-bold text-lg text-gray-800 mb-2">¿Cómo realizo mi pedido y entrega?</h3>
+                    <p class="text-gray-600 text-sm">Haz clic en cualquiera de los botones de WhatsApp para coordinar el método de pago y la entrega inmediata.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Banner Flotante WhatsApp Celulares -->
+    <div class="fixed bottom-6 right-6 z-50">
+        <a href="https://api.whatsapp.com/send?phone=584123350535&text=Hola!%20Deseo%20hacer%20un%20pedido%20de%20K%C3%A9fir." 
+           target="_blank" 
+           class="bg-emerald-500 hover:bg-emerald-600 text-white w-14 h-14 rounded-full flex items-center justify-center text-3xl shadow-2xl shadow-emerald-600/50 hover:scale-110 transition-all">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <!-- Footer / Pie de página -->
+    <footer class="bg-kefir-800 text-white py-12 border-t border-kefir-700">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <div class="flex justify-center items-center gap-2 mb-4">
+                <i class="fa-solid fa-bottle-droplet text-kefir-500 text-2xl"></i>
+                <span class="font-heading font-bold text-2xl">KéfirVital</span>
+            </div>
+            <p class="text-kefir-200 text-sm max-w-md mx-auto mb-6">
+                Salud, digestión y bienestar natural a la puerta de tu hogar.
+            </p>
+            <p class="text-xs text-kefir-200">
+                &copy; 2026 KéfirVital. Todos los derechos reservados.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
